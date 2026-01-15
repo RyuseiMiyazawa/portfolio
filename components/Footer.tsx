@@ -16,14 +16,6 @@ export default function Footer() {
             >
               GitHub
             </a>
-            <a
-              href="https://skill-tracker-mu.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors"
-            >
-              Skill Tracker
-            </a>
           </div>
         </div>
       </div>
