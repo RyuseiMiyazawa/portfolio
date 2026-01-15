@@ -28,11 +28,21 @@ export async function POST(request: Request) {
       });
     }
 
+    // Resend無料プランでは、登録したメールアドレスにのみ送信可能
     const data = await resend.emails.send({
-      from: 'Portfolio Contact <onboarding@resend.dev>',
+      from: 'onboarding@resend.dev',
       to: 'miyazawar0926@gmail.com',
       replyTo: email,
       subject: `ポートフォリオからのお問い合わせ: ${name}`,
+      text: `
+新しいお問い合わせ
+
+名前: ${name}
+メールアドレス: ${email}
+
+メッセージ:
+${message}
+      `,
       html: `
         <h2>新しいお問い合わせ</h2>
         <p><strong>名前:</strong> ${name}</p>
