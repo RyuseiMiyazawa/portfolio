@@ -43,15 +43,48 @@ export default function About() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">自己紹介</h2>
-        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-          フロントエンド・バックエンド・インフラまで一貫対応できるフルスタックエンジニアです。
-        </p>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-          <h3 className="text-xl font-semibold mb-3">経歴</h3>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-            学生時代より約2年間、株式会社ジーネックスにてRuby・Java・PHPを用いた業務系システム開発に携わり、オブジェクト指向設計、MVCアーキテクチャ、チーム開発の基礎を実務レベルで習得。その後、Next.js・TypeScript・Python・AWSを中心としたモダンな技術スタックへとスキルを拡張し、AI連携、サーバーレスアーキテクチャ、OCR自動化などを実運用レベルで構築。
-          </p>
+        <h2 className="text-3xl font-semibold mb-6">My Story</h2>
+
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-2xl font-semibold mb-3">大学生からフリーランスへ</h3>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              大学2年次、文芸創作学科で学びながらも、自分の手で何かを創り出したいという想いが強くなっていました。偶然出会ったプログラミングに魅了され、独学でWeb開発を学び始めました。
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-3">
+              学びを深めるため、株式会社ジーネックスでインターンとして参画。Ruby on Rails、Laravel、Javaを使った業務システム開発に約2年間携わり、オブジェクト指向設計やMVCアーキテクチャ、チーム開発の基礎を実務レベルで習得しました。
+            </p>
+          </div>
+
+          <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6">
+            <h3 className="text-2xl font-semibold mb-3">転機となった決断</h3>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              卒業を控えた時期、多くの同級生が企業への就職を選ぶ中、私は別の道を選びました。
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-3">
+              <strong className="text-blue-600 dark:text-blue-400">新卒でフリーランスエンジニアとして独立する</strong>という決断です。
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-3">
+              この選択には大きな不安もありました。しかし、学生時代に培った技術力と、自分の手でキャリアを築きたいという強い想いが背中を押しました。企業に属するのではなく、自らの力で価値を生み出し、多様なプロジェクトに挑戦することで、より速く成長できると確信していました。
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-semibold mb-3">技術スタックの進化</h3>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              フリーランスとして活動を始めてから、技術スタックを大きく拡張しました。従来のRuby・Java・PHPに加え、Next.js・TypeScript・Python・AWSといったモダンな技術を習得。特にAI技術との連携に力を入れ、OpenAI APIやGoogle Gemini APIを活用したプロジェクトを複数手がけました。
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-3">
+              HRテック企業での人材育成プラットフォーム開発、大手スポーツ団体の新規サイト構築、AI記事タグ付けAPI開発、OCR処理の自動化など、フロントエンド・バックエンド・インフラと幅広い領域で実績を積み重ねています。
+            </p>
+          </div>
+
+          <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-6">
+            <h3 className="text-2xl font-semibold mb-3">これから</h3>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              AIを実業務に落とし込む実装力、フルスタック開発の対応範囲の広さ、新技術への高速キャッチアップという強みを活かし、クライアントに価値を提供し続けたいと考えています。
+            </p>
+          </div>
         </div>
       </section>
 
