@@ -1,12 +1,23 @@
 'use client';
 
 import { Rocket, Code2, Zap } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="container mx-auto px-4 py-20">
       {/* Hero Section */}
       <section className="min-h-[80vh] flex flex-col justify-center items-center text-center">
+        <div className="mb-8">
+          <Image
+            src="/profile.jpg"
+            alt="宮澤 琉世"
+            width={200}
+            height={200}
+            className="rounded-full object-cover shadow-xl"
+            priority
+          />
+        </div>
         <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           宮澤 琉世
         </h1>
