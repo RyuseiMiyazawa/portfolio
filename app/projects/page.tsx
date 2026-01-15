@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Projects() {
   const workProjects = [
     {
@@ -67,6 +69,7 @@ export default function Projects() {
       role: 'フルスタック開発',
       link: 'https://skill-tracker-mu.vercel.app',
       github: 'https://github.com/RyuseiMiyazawa/skill-tracker',
+      image: '/skill-tracker.png',
       achievements: [
         'AI駆動入力による自動スキル抽出',
         '音声入力 + AI解析の実装',
@@ -80,6 +83,18 @@ export default function Projects() {
       key={index}
       className="border border-gray-200 dark:border-gray-700 rounded-lg p-8 hover:shadow-xl transition-all hover:border-blue-400"
     >
+      {project.image && (
+        <div className="mb-6 rounded-lg overflow-hidden">
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={800}
+            height={450}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )}
+
       <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
         <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
         <span className="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
